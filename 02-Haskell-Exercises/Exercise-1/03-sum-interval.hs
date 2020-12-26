@@ -2,6 +2,6 @@
 
 sumInterval :: Int -> Int -> Int
 sumInterval start end
- | start == end = start
- | start < end = start + sumInterval (start + 1) end
- | otherwise = sumInterval end start
+    | start == end = start
+    | start < end  = start + sumInterval (start + 1) end
+    | otherwise    = sumInterval end start
